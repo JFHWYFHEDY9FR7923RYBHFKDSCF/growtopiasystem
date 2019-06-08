@@ -3,8 +3,33 @@ const client = new Discord.Client();
 var prefix = "-";
 var adminprefix = '-'
 
+
+client.on('ready', () => {
 client.user.setStatus("dnd");
-client.user.setGame(`Growtopia 3rb | -help |by 7MD  `,"https://www.twitch.tv/dggamingbot")
+client.user.setGame(`Growtopia 3rb | -help | By 7MD`,"https://www.twitch.tv/dggamingbot")
+  console.log(`Logged in as ${client.user.tag}!`);
+  console.log('')
+  console.log('')
+  console.log('╔[═════════════════════════════════════════════════════════════════]╗')
+  console.log(`[Start] ${new Date()}`);
+  console.log('╚[═════════════════════════════════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════════════════════════════]╗');
+  console.log(`Logged in as * [ " ${client.user.username} " ]`);
+  console.log('')
+  console.log('Informations :')
+  console.log('')
+  console.log(`servers! [ " ${client.guilds.size} " ]`);
+  console.log(`Users! [ " ${client.users.size} " ]`);
+  console.log(`channels! [ " ${client.channels.size} " ]`);
+  console.log('╚[════════════════════════════════════]╝')
+  console.log('')
+  console.log('╔[════════════]╗')
+  console.log(' Bot Is Online')
+  console.log('╚[════════════]╝')
+  console.log('')
+  console.log('')
+});
 
 client.on("message", async message => {
         if(!message.channel.guild) return;
