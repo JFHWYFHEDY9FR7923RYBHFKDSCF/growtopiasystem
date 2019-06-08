@@ -5,7 +5,7 @@ var adminprefix = '-'
 
 
 client.on('ready', () => {
-client.user.setStatus("dnd");
+client.user.setStatus("idle");
 client.user.setGame(`Growtopia 3rb | -help | By 7MD`,"https://www.twitch.tv/dggamingbot")
   console.log(`Logged in as ${client.user.tag}!`);
   console.log('')
